@@ -1,0 +1,59 @@
+{
+  "name": "webpack-es6-sass-setup",
+  "version": "0.0.1",
+  "description": "A sample setup for Webpack with ES6 and Sass",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server -d --hot --config webpack.config.js --watch",
+    "watch": "./node_modules/.bin/webpack --config webpack.config.js --watch",
+    "dev": "./node_modules/.bin/webpack --config webpack.config.js",
+    "prod": "cross-env NODE_ENV=production ./node_modules/.bin/webpack --progress",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aki Karkkainen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/akikoo/webpack-es6-sass-setup.git"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bootstrap-sass-webpack": "0.0.3",
+    "cross-env": "^5.2.0",
+    "css-hot-loader": "^1.4.0",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^2.0.8",
+    "precss": "^3.1.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
+    "stylelint-webpack-plugin": "^0.9.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "url-loader": "^1.0.1",
+    "webpack": "^3.8.1",
+    "webpack-dashboard": "^2.0.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "bootstrap-webpack": "0.0.6",
+    "holderjs": "^2.9.4",
+    "jquery": "^3.3.1"
+  }
+}
